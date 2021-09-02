@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/1.png" class= 'logo' id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero color">
+                                <h2>Conoce Andalucía</h2>
+                                <p>Precios económicos</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría conocer?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Tours a medida<br>
+                        Explora  la ciudad acompañado de un guía oficial</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Conocerás cada rincón<br>
+                        </p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p> "“Lo malo no es que los sevillanos piensen que tienen 
+                            la ciudad más bonita del mundo… Lo peor es que puede que
+                             tengan hasta razón.”
+                             <small> Antonio Gala, escritor español</small>
+                       </p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Elige tu visita</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso-1.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Sevilla monumental</h4>
+                        <p>Duración: 2,5 h</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">€200  <span class="u-pull-right ">120€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Taller de cocina Andaluza</h4>
+                            <p>Duración: 3 horas</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">€120</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Show Flamenco</h4>
+                            <p>Artistas locales</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$20  <span class="u-pull-right ">€15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso-4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Alcázar de Sevilla</h4>
+                        <p>Duración: 1,5 h</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">€80  <span class="u-pull-right ">€65</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso-5.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Catedral de Sevilla</h4>
+                            <p>Duración: 1,5 h</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$80  <span class="u-pull-right ">€65</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso-6.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Sevilla nocturna/leyendas</h4>
+                            <p>Duración: 2horas</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">€20  <span class="u-pull-right ">€15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Comida Mexicana para principiantes</h4>
+                        <p>Juan Pedro</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Estudio Musical en tu casa</h4>
+                            <p>Juan Pedro</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso-7.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Paseo Guadalquivir en barco</h4>
+                            <p>Duración: 50 minutos</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">€20  <span class="u-pull-right ">€15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso-8.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Sevilla en Bici</h4>
+                            <p>Duración: 3 horas</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">€20  <span class="u-pull-right ">€15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso-9.jpeg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>JTOur gastronómico tapas</h4>
+                                <p>Duración: 3,5 horas</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">€150  <span class="u-pull-right ">€80</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso-10.jpeg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Relax en Sevilla. Baños árabes</h4>
+                                <p>Duración 1,5h + masaje (50mit)</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$200  <span class="u-pull-right ">$150</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#"> Aviso</a>
+                                <a class="enlace" href="#">Web Beta</a>
+                                <a class="enlace" href="#">Colabora</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Webs colaboradoras</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
