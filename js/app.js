@@ -9,33 +9,28 @@ let articulosCarrito = [];
 cargarEventListeners();
 
 function cargarEventListeners() {
-     // Dispara cuando se presiona "Agregar Carrito"
      listaTours.addEventListener('click', agregarTour);
 
-     // Cuando se elimina un curso del carrito
      carrito.addEventListener('click', eliminarTour);
 
-     // Al Vaciar el carrito
+  
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 }
 
 
 
-
-// Funciones
-// Función que añade el tour al carrito
 function agregarTour(e) {
      e.preventDefault();
-     // Delegation para agregar-carrito
+    
      if(e.target.classList.contains('agregar-carrito')) {
           const tour = e.target.parentElement.parentElement;
-          // Enviamos el curso seleccionado para tomar sus datos
+       
           leerDatosTour(tour);
      }
 }
 
-// Lee los datos del curso
+
 function leerDatosTour(tour) {
      const infoTour = {
           imagen: tour.querySelector('img').src,
@@ -64,18 +59,17 @@ function leerDatosTour(tour) {
 
      
 
-     // console.log(articulosCarrito)
      carritoHTML();
 }
 
-// Elimina el curso del carrito en el DOM
+
 function eliminarTour(e) {
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
-          // e.target.parentElement.parentElement.remove();
+         
           const tourId = e.target.getAttribute('data-id')
           
-          // Eliminar del arreglo del carrito
+     
           articulosCarrito = articulosCarrito.filter(tour => tour.id !== tourId);
 
           carritoHTML();
@@ -83,7 +77,6 @@ function eliminarTour(e) {
 }
 
 
-// Muestra el curso seleccionado en el Carrito
 function carritoHTML() {
 
      vaciarCarrito();
@@ -106,13 +99,8 @@ function carritoHTML() {
 
 }
 
-// Elimina los cursos del carrito en el DOM
 function vaciarCarrito() {
-     // forma lenta
-     // contenedorCarrito.innerHTML = '';
-
-
-     // forma rapida (recomendada)
+   
      while(contenedorCarrito.firstChild) {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
       }
