@@ -43,7 +43,8 @@ ul {
         background-repeat:no-repeat;
         width:100vw;
         height:80vh;
-        background-size:cover
+        background-size:cover;
+        opacity: 80%;
     }
      
 
@@ -206,4 +207,12 @@ text-decoration: none;
      height: 200px;
      size: 200px;
     
+}
+
+
+
+.claim  {
+z-index: 15;
+font-size: 25px;
+color: green;
 }
