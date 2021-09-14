@@ -47,7 +47,7 @@ function leerDatosTour(tour) {
 
 
      if( articulosCarrito.some( tour => tour.id === infoTour.id ) ) { 
-          const tours = articulosCarrito.map( curso => {
+          const tours = articulosCarrito.map( tour => {
                if( tour.id === infoTour.id ) {
                     tour.cantidad++;
                      return tour;
@@ -76,7 +76,7 @@ function eliminarTour(e) {
           const cursoId = e.target.getAttribute('data-id')
           
           // Eliminar del arreglo del carrito
-          articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
+          articulosCarrito = articulosCarrito.filter(tour => tour.id !== tourId);
 
           carritoHTML();
      }
