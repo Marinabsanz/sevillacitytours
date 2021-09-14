@@ -73,7 +73,7 @@ function eliminarTour(e) {
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
           // e.target.parentElement.parentElement.remove();
-          const cursoId = e.target.getAttribute('data-id')
+          const tourId = e.target.getAttribute('data-id')
           
           // Eliminar del arreglo del carrito
           articulosCarrito = articulosCarrito.filter(tour => tour.id !== tourId);
